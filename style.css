@@ -1,0 +1,378 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+html, body {
+    width : 100%;
+    height : 100%;
+
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make it take the full width of the viewport */
+    z-index: 100; /* Adjust the z-index as needed */
+    height : 100px;
+}
+
+
+#header a img{
+   height : 75px;
+   width: 75px;
+}
+
+#navbar {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    gap :40px;
+
+}
+
+#navbar li{
+    list-style: none;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+   color : #088178
+}
+
+#navbar li a.active ::after {
+    content: " ";
+    color : #088178;
+    position : absolute;
+    width : 30%;
+    height : 2px;
+    bottom : -4px;
+    left : 20px;
+
+}
+
+#hero{
+    background-image: url("./clo.jpg");
+    margin-top: 20px;
+    height: 90vh;
+    width : 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 75px;
+    font-weight: 1200;
+      position : relative;
+      z-index: 10;
+
+}
+
+#hero h2{
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+#hero h1{
+    color: white ;
+    z-index: 999;
+}
+#hero p{
+    color: red ;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    z-index: 999;
+}
+
+#hero button{
+    display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#hero button :hover {
+    background-color: #e53e41;
+    transform: scale(1.05);
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 20px;
+    border : 1px solid black;
+    box-shadow:20px 20px 20px #1a1a1a;
+    border-radius: 4px;
+    margin : 15px 0;
+}
+
+#feature .fe-box img{
+    height : 100px;
+    width : 100px;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color : #088178;
+    background-color: #fddde4;
+    display: inline-block;
+}
+
+#feature {
+    display: flex;
+    gap : 65px;
+    justify-content: center;
+}
+
+#product1{
+
+    text-align:center;
+}
+
+#product1 h2{
+    font-size: 50px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 400px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+   box-shadow: 10px 20px 20px black;
+   margin : 15px 0;
+}
+
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#product1 .pro .des h5{
+    padding-top: 10px;
+    font-size: 14px;
+    color:#1a1a1a;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 23)
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#088178;
+}
+
+#product1 .pro.cart {
+    width: 4px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #cce7d0;
+    font-weight: 500;
+    color: #088178;
+}
+
+#product1 .pro-container {
+    display: flex;
+    gap : 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the container */
+#newsletter {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the heading */
+#newsletter h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+/* Style the paragraph */
+#newsletter p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px; /* Add more margin at the bottom */
+}
+
+/* Style the span inside the paragraph */
+#newsletter span {
+    font-weight: bold;
+    color: #e60000;
+}
+
+/* Style the input field */
+#newsletter input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-right: 10px;
+}
+
+/* Style the button */
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+#newsletter button:hover {
+    background-color: #ff3333;
+}
+
+/* Style the footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the footer link */
+#footer a {
+    color: #e60000; /* Change the link color to your preference */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the link on hover */
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Default styles for screens wider than 799px */
+/* Add your existing CSS rules here */
+
+/* Media query for screens with a maximum width of 799px */
+@media (max-width: 799px) {
+    /* Adjust styles for screens with a maximum width of 799px or smaller here */
+
+    /* Header adjustments */
+    #header {
+        padding: 10px 20px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navbar li {
+        text-align: center;
+    }
+
+    /* Hero section adjustments */
+    #hero {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 24px;
+    }
+
+    /* Features section adjustments */
+    #feature {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #feature .fe-box {
+        width: 45%; /* Adjust width for smaller screens */
+        text-align: center;
+    }
+
+    /* Product section adjustments */
+    #product1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #product1 h2 {
+        font-size: 36px;
+    }
+
+    #product1 .pro {
+        width: 100%;
+        min-width: unset;
+        padding: 10px;
+    }
+
+    #product1 .pro img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #product1 .pro .des h5 {
+        font-size: 16px;
+    }
+
+    /* Newsletter section adjustments */
+    #newsletter h4 {
+        font-size: 20px;
+    }
+
+    #newsletter p {
+        font-size: 14px;
+    }
+
+    /* Footer adjustments */
+    #footer {
+        padding: 10px;
+    }
+
+    #footer a {
+        font-size: 14px;
+    }
+}
